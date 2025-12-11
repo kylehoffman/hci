@@ -151,3 +151,26 @@ h2 {
   line-height: 1.1;
   color: var(--text);
 }
+
+/* === About Me Page Styles === */
+.profile-photo {
+  width: 100%;       /* Forces image to fit the text column */
+  height: auto;      /* Maintains aspect ratio */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.photo-caption {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  color: #757575;
+  font-style: italic;
+  margin-bottom: 40px; /* Space between caption and bio text */
+  text-align: center;  /* Optional: centers the caption */
+}
+
+/* Removes the large gap between bio lines for a tighter list look */
+.bio-stats p {
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em;
+}
