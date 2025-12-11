@@ -1,30 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Projects</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html"><strong>Home</strong></a>
-        <a href="manifesto.html">Design Manifesto</a>
-        <a href="about.html">About Me</a>
-    </nav>
+  <div class="rule rule-top" aria-hidden="true"></div>
 
-    <header>
-        <h1>My HCI Portfolio</h1>
-        <p>Welcome to my final project submission.</p>
-    </header>
+  <header class="masthead" role="banner">
+    <h1 class="brand">CSC 363 Portfolio</h1>
+  </header>
 
-    <main>
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1 Name</h3>
-            <p>Description of what I did...</p>
-            <a href="#">Link to Project</a>
-        </div>
-    </main>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="manifesto.html">Design Manifesto</a></li>
+    </ul>
+  </nav>
+
+  <div class="rule rule-bottom" aria-hidden="true"></div>
+
+  <main class="homepage-text">
+    <section>
+
+    <h2>Projects</h2>
+      <p style="margin-bottom: 60px;">
+        Throughout the semester, we completed several projects (called Design Sprints) that emphasized different parts
+        of the human-centered design process. Many of these are referenced in my Design Manifesto, but I provide links
+        to all of them here.
+      </p>
+
+     <div class="project-entry">
+        <a href="https://medium.com/@blroper/768b87f40a63" class="project-title" target="_blank" rel="noopener noreferrer">Re-designing Knotty & Board</a>
+        <div class="project-date">December 10, 2025</div>
+        <p>
+          In this project, we learned how to use Figma to design websites and applications. Specifically, we redesigned 
+          the website of a local furniture and interiors store, called Knotty & Board. As this was our first project 
+          this semester, it allowed us to become acquainted with the design process holistically. Our main focus was 
+          on sketching and design.
+        </p>
+      </div>
+
+       <div class="project-entry">
+        <a href="https://medium.com/@kyhoffman/exploring-the-world-of-coffee-through-data-visualization-25409cfb6999" class="project-title" target="_blank" rel="noopener noreferrer">Exploring the World of Coffee through Data Visualization</a>
+        <div class="project-date">October 14, 2025</div>
+        <p>
+          This project focused parimarily on data visualization. We worked to visualize a dataset about coffee quality and
+          production around the world. Our project contained two visualizations: a persuasive visualization and an analytical one.
+          In terms of technical skills, this project taught us the basics of web development and data visualization. 
+        </p>
+      </div>
+
+         <div class="project-entry">
+        <a href="https://medium.com/@ellora03/design-sprint-3-design-for-another-world-e433ecd5021f" class="project-title" target="_blank" rel="noopener noreferrer">Design Sprint 3: Design for Another World</a>
+        <div class="project-date">November 4, 2025</div>
+        <p>
+            In this project, we got to combine the skills gained from our first and second Design Sprint assignments to
+            build a web-based VR simulation. Hence, this project honed our web development skills and allowed us to
+            dip our feet in VR development. We relied primarily on A-frame to build the VR experience, as well as
+            360-degree photography. 
+        </p>
+      </div>
+
+       <div class="project-entry">
+        <a href="https://medium.com/@ellora03/design-sprint-4-re-design-and-extend-60aa4a1fcf80" class="project-title" target="_blank" rel="noopener noreferrer">Design Sprint 4: Re-design and Extend</a>
+        <div class="project-date">December 4, 2025</div>
+        <p>
+            This project had a different flavor from our other Design Sprint assignments because our final submission
+            was a physical prototype rather than a digital one. Nonetheless, I particiularly appreciate this because
+            during the prototyping phase of any project, physical prototypes offer a tangible experience with a design 
+            which might not otherwise be possible. In particular, this project allowed us to develop further our ideation,
+            prototyping, and revision skills in the human-centered design process.
+        </p>
+      </div>
+
+    </section>
+  </main>
 </body>
 </html>
