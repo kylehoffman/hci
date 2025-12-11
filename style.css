@@ -91,21 +91,28 @@ html, body {
 
 /* === “Journal” style layout for main body === */
 .homepage-text {
-  max-width: 760px;                 /* ≈4.75in text block */
-  margin: 80px auto 120px;          /* generous white space */
-  padding: 0 24px;
-  text-align: justify;
+  max-width: 760px;
+  
+  /* UPDATED: Top margin 80px, Auto sides, Bottom margin 0 */
+  margin: 80px auto 0; 
+  
+  /* UPDATED: Top 0, Right 24px, Bottom 150px (The fix), Left 24px */
+  padding: 0 24px 150px 24px;
+  
+  text-align: left;
 }
 
 /* subtly off-centered: a little more margin on the right */
 @media screen and (min-width: 1000px) {
   .homepage-text {
-    margin-left: calc(50% - 400px); /* left-shift for off-center feel */
+    margin-left: calc(50% - 400px); 
   }
 }
 
-.homepage-text p + p {
-  margin-top: 1.3em;
+/* Paragraph spacing stays the same */
+.homepage-text p {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 /* === Project List Styling === */
@@ -173,4 +180,36 @@ h2 {
 .bio-stats p {
   margin-top: 0.5em; 
   margin-bottom: 0.5em;
+}
+
+/* === Manifesto Specifics === */
+/* Makes links inside the text block blue and underlined */
+.homepage-text a {
+    color: #0000EE; /* Standard Link Blue */
+    text-decoration: underline;
+}
+
+.homepage-text a:hover {
+    text-decoration: none; /* Removes underline on hover for effect */
+}
+
+/* Specific styling to center images and keep them from getting too big */
+.manifesto-img {
+    width: 100%;
+    max-width: 500px; /* Limits size so they look neat */
+    height: auto;
+    display: block;
+    margin: 20px auto 10px auto; /* Centers the image */
+    border: 1px solid #ddd; /* Optional: adds a tiny border */
+}
+
+/* === Bullet Point Spacing Fix === */
+.homepage-text ul {
+  margin-top: 2rem;    /* Adds a full blank line ABOVE the list */
+  margin-bottom: 2rem; /* Adds a full blank line BELOW the list */
+  padding-left: 2rem;  /* Indents the bullets nicely */
+}
+
+.homepage-text li {
+  margin-bottom: 0.5rem; /* Adds a tiny bit of space between each bullet item */
 }
