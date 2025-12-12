@@ -121,12 +121,15 @@ html, body {
 }
 
 /* The Title Link */
-.project-title {
-  display: inline-block; /* Forces it to its own line */
+.homepage-text .project-title {
+  display: inline-block; 
   font-family: "Bodoni Moda", serif;
-  font-size: 1.5rem; /* ~24px */
+  font-size: 1.5rem; 
   font-weight: 700;
-  color: var(--text);
+  
+  /* Forces the color to be black, ignoring the blue link rule */
+  color: var(--text) !important; 
+  
   text-decoration: none;
   margin-bottom: 4px;
   line-height: 1.2;
@@ -185,7 +188,7 @@ h2 {
 /* === Manifesto Specifics === */
 /* Makes links inside the text block blue and underlined */
 .homepage-text a {
-    color: #0000EE; /* Standard Link Blue */
+    color: #3366CC; /* Standard Link Blue */
     text-decoration: underline;
 }
 
