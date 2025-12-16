@@ -137,7 +137,8 @@ html, body {
 
 .project-title:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px; /* A nice thick editorial underline */
+  text-decoration-thickness: 2px; 
+  color: #3366CC !important; /* Turns blue only on hover */
 }
 
 /* The Date */
